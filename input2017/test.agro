@@ -1,0 +1,24 @@
+Version: 1.0
+AgroManagement:
+- 2017-03-01:
+    CropCalendar:
+        crop_name: 'springwheat'
+        variety_name: 'springwheat'
+        crop_start_date: 2017-03-28
+        crop_start_type: emergence
+        crop_end_date: 2017-07-21
+        crop_end_type: harvest
+        max_duration: 300
+    TimedEvents:
+    -   event_signal: irrigate
+        name:  Timed irrigation events
+        comment: All irrigation amounts in cm
+        events_table:
+        - 2017-05-05: {amount: 6.0, efficiency : 0.8}
+        - 2017-05-17: {amount: 6.0, efficiency : 0.8}
+        - 2017-05-26: {amount: 6.0, efficiency : 0.8}
+        - 2017-06-12: {amount: 5.7, efficiency : 0.8}
+        - 2017-06-23: {amount: 5.7, efficiency : 0.8}
+        - 2017-07-04: {amount: 4.1, efficiency : 0.8}
+    StateEvents: null
+- 2017-09-01:
